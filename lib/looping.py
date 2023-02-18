@@ -11,7 +11,13 @@ def happy_new_year():
     print("Happy New Year!")
 
 def square_integers(int_list):
-    return [i ** 2 for i in int_list]
+    # return [i ** 2 for i in int_list]
+    squared = []
+    for each in int_list:
+        each = each ** 2
+        squared.append(each)
+    return squared
+
 
 def fizzbuzz():
     for i in range(1, 101):
